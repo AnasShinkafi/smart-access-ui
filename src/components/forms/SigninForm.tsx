@@ -35,7 +35,7 @@ export default function SigninForm() {
       ) {
         toast.success("Login successful!");
         document.cookie = "auth=true; path=/"; // simple session
-        router.push("/dashboard"); // redirect to dashboard
+        router.push(`/dashboard/${storedUser.id}`); // redirect to dashboard
       } else {
         toast.error("Invalid credentials");
       }
@@ -45,7 +45,7 @@ export default function SigninForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="space-y-6 max-w-md mx-auto bg-white p-6 rounded-lg shadow"
+      className="space-y-6 max-w-md mx-auto bg-white p-6 rounded-lg shadow mt-20"
     >
       <h2 className="text-xl font-semibold mb-4 text-center text-teal-600">Sign In</h2>
 

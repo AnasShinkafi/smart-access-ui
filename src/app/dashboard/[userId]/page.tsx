@@ -15,7 +15,7 @@ export default function UserDashboardPage({ params }: Props) {
       <div className="max-w-5xl mx-auto">
         <br /><br /><br />
         <h1 className="text-2xl sm:text-3xl text-black font-bold mb-2">
-          Welcome 👋
+          Welcome 👋 {userId}
         </h1>
         <p className="text-gray-600 mb-6">
           Access all your smart services from here.
@@ -36,9 +36,48 @@ export default function UserDashboardPage({ params }: Props) {
             href={`/dashboard/${userId}/buy-data`}
             className="block p-6 bg-white rounded-xl shadow hover:shadow-md transition"
           >
-            <h2 className="text-lg font-semibold text-green-600">Buy Data</h2>
+            <h2 className="text-lg font-semibold text-blue-600">Buy Data</h2>
             <p className="text-gray-500 text-sm mt-1">
               Get affordable data plans
+            </p>
+          </Link>
+
+          <Link
+            href={`/dashboard/${userId}/electricity`}
+            className="block p-6 bg-white rounded-xl shadow hover:shadow-md transition"
+          >
+            <h2 className="text-lg font-semibold text-blue-600">Buy Electricity</h2>
+            <p className="text-gray-500 text-sm mt-1">
+              Buy power from any Disco instantly
+            </p>
+          </Link>
+          <Link
+            href={`/dashboard/${userId}/exam-pin`}
+            className="block p-6 bg-white rounded-xl shadow hover:shadow-md transition"
+          >
+            <h2 className="text-lg font-semibold text-blue-600">Buy Exam Pin</h2>
+            <p className="text-gray-500 text-sm mt-1">
+              Buy Exam Pin instantly
+            </p>
+          </Link>
+
+          <Link
+            href={`/dashboard/${userId}/fund-wallet`}
+            className="block p-6 bg-white rounded-xl shadow hover:shadow-md transition"
+          >
+            <h2 className="text-lg font-semibold text-blue-600">Fund Wallet</h2>
+            <p className="text-gray-500 text-sm mt-1">
+              Fund Your Wallet
+            </p>
+          </Link>
+
+          <Link
+            href={`/dashboard/${userId}/tv-subscription`}
+            className="block p-6 bg-white rounded-xl shadow hover:shadow-md transition"
+          >
+            <h2 className="text-lg font-semibold text-blue-600">Tv Subscription</h2>
+            <p className="text-gray-500 text-sm mt-1">
+              Subscribe your Tv instantly
             </p>
           </Link>
 

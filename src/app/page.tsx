@@ -10,5 +10,5 @@ export default function HomePage() {
       <Services />
       <HowItWorks />
     </main>
-  );
+  ); 
 }

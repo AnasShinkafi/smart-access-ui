@@ -1,6 +1,6 @@
 "use client";
 
-import AirtimeForm from "@/components/forms/AirtimeForm";
+import AirtimeForm from "../../../../components/forms/AirtimeForm";
 import { useParams } from "next/navigation";
 
 export default function BuyAirtimePage() {

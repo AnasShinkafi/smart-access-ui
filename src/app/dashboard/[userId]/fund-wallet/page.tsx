@@ -1,5 +1,5 @@
-import FundWalletForm from "@/components/forms/FundWalletForm";
-import WalletFundingHistory from "@/components/WalletFundingHistory";
+import FundWalletForm from "../../../../components/forms/FundWalletForm";
+import WalletFundingHistory from "../../../../components/WalletFundingHistory";
 
 interface FundWalletPageProps {
   params: {

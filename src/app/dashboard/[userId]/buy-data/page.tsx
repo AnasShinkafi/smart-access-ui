@@ -1,7 +1,7 @@
 "use client";
 
 
-import DataForm from "@/components/forms/DataForm";
+import DataForm from "../../../../components/forms/DataForm";
 import { useParams } from "next/navigation";
 
 export default function BuyDataPage() {

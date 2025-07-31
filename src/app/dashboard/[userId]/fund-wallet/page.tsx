@@ -1,13 +1,13 @@
 import FundWalletForm from "../../../../components/forms/FundWalletForm";
 import WalletFundingHistory from "../../../../components/WalletFundingHistory";
 
-interface FundWalletPageProps {
-  params: {
-    userId: string;
-  };
-}
+// interface FundWalletPageProps {
+//   params: {
+//     userId: string;
+//   };
+// }
 
-export default function FundWalletPage({  }: FundWalletPageProps) {
+export default function FundWalletPage() {
   const params: {userId} = JSON.parse(localStorage.getItem("user") || "{}");
   return (
     <div className="p-4 md:p-8 max-w-2xl mx-auto">

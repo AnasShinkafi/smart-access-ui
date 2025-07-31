@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -13,9 +14,11 @@ export default function Hero() {
           <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 lg:mb-8">
             Purchase data, airtime, pay bills, and more online.
           </p>
-          <button className="bg-teal-600 text-white px-6 py-3 rounded-xl text-base sm:text-lg hover:bg-teal-700 transition duration-300">
+          <Link href={'/signup'}>
+            <button className="bg-teal-600 text-white px-6 py-3 rounded-xl text-base sm:text-lg hover:bg-teal-700 transition duration-300">
             Get Started
           </button>
+          </Link>
         </div>
 
         {/* Image */}

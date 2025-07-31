@@ -172,7 +172,7 @@ export default function TransactionTable() {
       <div className="flex justify-end items-center gap-3">
   <button
     onClick={() => exportToCSV(filteredData)}
-    className="px-4 py-2 bg-blue-500 text-white text-sm rounded-md hover:bg-blue-600"
+    className="px-4 py-2 bg-teal-500 text-white text-sm rounded-md hover:bg-teal-600"
   >
     Export CSV
   </button>

@@ -26,7 +26,7 @@ export default function UserDashboardPage({ params }: Props) {
             href={`/dashboard/${userId}/buy-airtime`}
             className="block p-6 bg-white rounded-xl shadow hover:shadow-md transition"
           >
-            <h2 className="text-lg font-semibold text-blue-600">Buy Airtime</h2>
+            <h2 className="text-lg font-semibold text-teal-600">Buy Airtime</h2>
             <p className="text-gray-500 text-sm mt-1">
               Recharge any network instantly
             </p>
@@ -36,7 +36,7 @@ export default function UserDashboardPage({ params }: Props) {
             href={`/dashboard/${userId}/buy-data`}
             className="block p-6 bg-white rounded-xl shadow hover:shadow-md transition"
           >
-            <h2 className="text-lg font-semibold text-blue-600">Buy Data</h2>
+            <h2 className="text-lg font-semibold text-teal-600">Buy Data</h2>
             <p className="text-gray-500 text-sm mt-1">
               Get affordable data plans
             </p>
@@ -46,7 +46,7 @@ export default function UserDashboardPage({ params }: Props) {
             href={`/dashboard/${userId}/electricity`}
             className="block p-6 bg-white rounded-xl shadow hover:shadow-md transition"
           >
-            <h2 className="text-lg font-semibold text-blue-600">Buy Electricity</h2>
+            <h2 className="text-lg font-semibold text-teal-600">Buy Electricity</h2>
             <p className="text-gray-500 text-sm mt-1">
               Buy power from any Disco instantly
             </p>
@@ -55,7 +55,7 @@ export default function UserDashboardPage({ params }: Props) {
             href={`/dashboard/${userId}/exam-pin`}
             className="block p-6 bg-white rounded-xl shadow hover:shadow-md transition"
           >
-            <h2 className="text-lg font-semibold text-blue-600">Buy Exam Pin</h2>
+            <h2 className="text-lg font-semibold text-teal-600">Buy Exam Pin</h2>
             <p className="text-gray-500 text-sm mt-1">
               Buy Exam Pin instantly
             </p>
@@ -65,7 +65,7 @@ export default function UserDashboardPage({ params }: Props) {
             href={`/dashboard/${userId}/fund-wallet`}
             className="block p-6 bg-white rounded-xl shadow hover:shadow-md transition"
           >
-            <h2 className="text-lg font-semibold text-blue-600">Fund Wallet</h2>
+            <h2 className="text-lg font-semibold text-teal-600">Fund Wallet</h2>
             <p className="text-gray-500 text-sm mt-1">
               Fund Your Wallet
             </p>
@@ -75,7 +75,7 @@ export default function UserDashboardPage({ params }: Props) {
             href={`/dashboard/${userId}/tv-subscription`}
             className="block p-6 bg-white rounded-xl shadow hover:shadow-md transition"
           >
-            <h2 className="text-lg font-semibold text-blue-600">Tv Subscription</h2>
+            <h2 className="text-lg font-semibold text-teal-600">Tv Subscription</h2>
             <p className="text-gray-500 text-sm mt-1">
               Subscribe your Tv instantly
             </p>

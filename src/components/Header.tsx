@@ -5,13 +5,14 @@ import Link from "next/link";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const storedUser = JSON.parse(localStorage.getItem("user") || "{}");
 
   const links = [
     { title: "Home", url: "/" },
-    { title: "Buy Data", url: "/buy-data" },
-    { title: "Buy Airtime", url: "/buy-airtime" },
-    { title: "TV Subscription", url: "/tv-subscription" },
-    { title: "Electricity", url: "/electricity" },
+    { title: "Buy Data", url: `/dashboard/${storedUser.id}/buy-data` },
+    { title: "Buy Airtime", url: `/dashboard/${storedUser.id}/buy-airtime` },
+    { title: "TV Subscription", url: `/dashboard/${storedUser.id}/tv-subscription` },
+    { title: "Electricity", url: `/dashboard/${storedUser.id}/electricity` },
   ];
 
   return (

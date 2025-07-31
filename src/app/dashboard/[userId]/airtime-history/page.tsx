@@ -15,7 +15,7 @@ type AirtimeTransaction = {
   timestamp: string;
 };
 
-type AirtimeHistoryTableProps = {
+ export type AirtimeHistoryTableProps = {
   userId: string;
 };
 

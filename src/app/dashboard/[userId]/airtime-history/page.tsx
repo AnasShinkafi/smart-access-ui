@@ -15,11 +15,11 @@ type AirtimeTransaction = {
   timestamp: string;
 };
 
-  type AirtimeHistoryTableProps = {
-  userId: string;
-};
+//   type AirtimeHistoryTableProps = {
+//   userId: string;
+// };
 
-export default  function AirtimeHistoryTable({ userId }: AirtimeHistoryTableProps) {
+export default  function AirtimeHistoryTable() {
   const [transactions, setTransactions] = useState<AirtimeTransaction[]>([]);
   const [filtered, setFiltered] = useState<AirtimeTransaction[]>([]);
   const [filters, setFilters] = useState({
@@ -27,6 +27,7 @@ export default  function AirtimeHistoryTable({ userId }: AirtimeHistoryTableProp
     from: "",
     to: "",
   });
+  const userId = JSON.parse(localStorage.getItem("user") || "{}");
 
   useEffect(() => {
     const storedData = localStorage.getItem(`airtimeTransactions_${userId}`);

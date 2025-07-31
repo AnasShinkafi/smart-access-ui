@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 
@@ -71,7 +72,7 @@ export default function EditProfileForm({ userId }: EditProfileFormProps) {
       {/* Profile Picture Preview */}
       {preview && (
         <div className="mb-4">
-          <img
+          <Image
             src={preview}
             alt="Profile preview"
             className="w-24 h-24 rounded-full object-cover border"

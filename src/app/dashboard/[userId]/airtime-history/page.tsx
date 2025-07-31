@@ -19,7 +19,7 @@ type AirtimeTransaction = {
   userId: string;
 };
 
-export  function AirtimeHistoryTable({ userId }: AirtimeHistoryTableProps) {
+export default  function AirtimeHistoryTable({ userId }: AirtimeHistoryTableProps) {
   const [transactions, setTransactions] = useState<AirtimeTransaction[]>([]);
   const [filtered, setFiltered] = useState<AirtimeTransaction[]>([]);
   const [filters, setFilters] = useState({
